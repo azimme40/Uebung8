@@ -49,18 +49,12 @@ public class Bruch {
 	}
 	public boolean hasSameValueAs (Bruch b)
 	{
-
-		int tempzaehler= b.zaehler; 
+		b.shorten(); 
 		
-	b.zaehler = b.zaehler/ ggT(b.zaehler, b.nenner); 
-	b.nenner = b.nenner / ggT(tempzaehler, b.nenner); 
-	
 		if (b.zaehler == zaehler && b.nenner == nenner)
 		{
-			 System.out.println(true); 
 			return true; 
 		}
-		 System.out.println(false); 
 		return false; 
 	}
 }
