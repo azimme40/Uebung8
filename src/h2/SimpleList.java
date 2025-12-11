@@ -6,7 +6,7 @@ public class SimpleList {
 	
 	public SimpleList() //Constructor
 	{
-		this.head = new Node(0); 
+		this.head = new Node(Integer.MIN_VALUE); 
 		
 	}
 	
